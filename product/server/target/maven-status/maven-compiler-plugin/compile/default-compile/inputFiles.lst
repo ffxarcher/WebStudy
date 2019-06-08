@@ -15,4 +15,5 @@
 /Users/shuaiqi/IdeaProjects/product/server/src/main/java/com/sq/server/dataobject/ProductInfo.java
 /Users/shuaiqi/IdeaProjects/product/server/src/main/java/com/sq/server/enums/ProductStatusEnum.java
 /Users/shuaiqi/IdeaProjects/product/server/src/main/java/com/sq/server/utils/ResultVOUtil.java
+/Users/shuaiqi/IdeaProjects/product/server/src/main/java/com/sq/server/controller/testFeign.java
 /Users/shuaiqi/IdeaProjects/product/server/src/main/java/com/sq/server/exception/ProductException.java

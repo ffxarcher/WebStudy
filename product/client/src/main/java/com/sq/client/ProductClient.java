@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 
 @FeignClient(name = "product")
-
 public interface ProductClient {
 
     @PostMapping("/product/listForOrder")

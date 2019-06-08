@@ -1,0 +1,16 @@
+#application_name必须和git仓库的配置文件名称相同
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8082
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      discovery:
+        service-id: CONFIG
+        enabled: true
+      profile: dev

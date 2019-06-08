@@ -39,7 +39,8 @@ public class ProductServiceImpl implements ProductService {
     @Override
     @Transactional
     public void decreaseStock(List<DecreaseStockInput> cartDtoList) {
-        for (DecreaseStockInput cartDto : cartDtoList) {
+        for (DecreaseStockInput cartDto : cartDtoList)
+        {
             Optional<ProductInfo> productInfoOptional =
                     productInfoRepository.findById(cartDto.getProductId());
 
