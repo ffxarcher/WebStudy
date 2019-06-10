@@ -68,6 +68,7 @@
             <version>1.4.6.RELEASE</version>
         </dependency>
 
+        <!--Stream-cloud配置-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-stream-rabbit</artifactId>

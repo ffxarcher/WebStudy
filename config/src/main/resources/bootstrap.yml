@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ffxarcher/configServer
+          username: saber1010137@gmail.com
+          password: ffx10101fsn
+          basedir:  /Users/shuaiqi/IdeaProjects/config/basedir
+  rabbitmq:
+    username: guest
+    password: sq144238
+    port: 5672
+    host: localhost
+##注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+##端口
+server:
+  port: 8083
+##暴露bus-refresh的api给外部的webhook访问
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

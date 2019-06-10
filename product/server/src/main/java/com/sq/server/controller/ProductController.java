@@ -74,10 +74,5 @@ public class ProductController {
         productService.decreaseStock(cartDtoList);
     }
 
-    @GetMapping("/test")
-    public String testFeign()
-    {
-        return  "ok";
-    }
 
 }
