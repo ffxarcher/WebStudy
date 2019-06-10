@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      profile: test
+      discovery:
+        enabled: true
+        service-id: CONFIG
+    ##将order消息的输入输出绑定到同一个topic下实现自产自消//多实例可以分组关键字group
+    stream:
+      bindings:
+        ###双通道
+        topic-input:
+          destination: aaa-topic
+          group: order
+        topic-output:
+          destination: aaa-topic
+          group: order
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8082

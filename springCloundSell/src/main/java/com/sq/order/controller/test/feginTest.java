@@ -1,4 +1,4 @@
-package com.sq.order.controller;
+package com.sq.order.controller.test;
 
 
 import com.sq.DecreaseStockInput;
