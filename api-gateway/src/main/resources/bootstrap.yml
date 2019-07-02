@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      uri: http://47.102.97.1:8083
+      profile: dev
+
+
+#  enabled: true
+#    service-id: CONFIG
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://47.102.97.1:8761/eureka/
+
+server:
+  port: 8085
+
