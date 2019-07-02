@@ -1,0 +1,23 @@
+#application_name必须和git仓库的配置文件名称相同
+eureka:
+  client:
+    service-url:
+      defaultZone: http://47.102.97.1:8761/eureka/
+
+server:
+  port: 8086
+
+spring:
+  application:
+    name: user
+  cloud:
+    config:
+      profile: dev
+      uri: http://47.102.97.1:8083
+
+      ##uri可以直接指定访问的config地址而
+      #      discovery:
+      ##        service-id: CONFIG
+      ##        enabled: true
+  ##则是客户端根据名称发现。。。，由于uri无法负载均衡所以特殊情况采用
+
