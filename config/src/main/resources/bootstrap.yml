@@ -13,12 +13,16 @@ spring:
     username: guest
     password: sq144238
     port: 5672
-    host: localhost
+    host: 47.102.97.1
 ##注册中心
+##instance强制使用ip而不是hostname注册
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://47.102.97.1:8761/eureka/
+  instance:
+    instance-id: 47.102.97.1:8083
+    prefer-ip-address: true
 ##端口
 server:
   port: 8083
